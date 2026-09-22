@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lê Huy Nghĩa - Liên hệ và gửi thông tin phản hồi</title>
+    <meta name="description" content="Liên hệ ngay với Lê Huy Nghĩa.">
+</head>
+<body>
+
+    <header>
+        <h1>Trang Web Của Tôi</h1>
+        <p>Chào mừng bạn đến với trang giới thiệu</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="about.html">Giới thiệu</a></li>
+            <li><a href="contact">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section>
+            <h2>1. Về tôi.</h2>
+            <p>Xin chào! Tôi tên là Lê Huy Nghĩa, hiện đang là một sinh viên ngành công nghệ thông tin.</p>
+        </section>
+
+        <section>
+            <h2>2. Kỹ năng & Sở thích</h2>
+            <ul>
+                <li><strong>Kỹ năng:</strong> HTML5, C++ , JavaScript.</li>
+                <li><strong>Sở thích:</strong> Đá bóng,chơi game,xem phim.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Mục tiêu nghề nghiệp</h2>
+            <p>Mục tiêu của tôi là phát triển thành một lập trình viên .</p>
+        </section>
+        <section>
+            <h2>4.Liên hệ.</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Thông tin cá nhân</legend>
+                    <fieldset>
+                        <legend>Thông tin cá nhân</legend>
+                        <p>
+                           <label for="fullname">Họ và tên:</label><br>
+                           <input type="text" id="fullname" name="fullname" required minlength="2" placeholder="Nhập họ và tên">
+                        </p>
+
+                        <p>
+                            <label for="email">Email:</label><br>
+                            <input type="email" id="email" name="email" required placeholder="example@gmail.com">
+                        </p>
+
+                        <p>
+                            <label for="phone">Số điện thoại:</label><br>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}" placeholder="0901234567" title="Vui lòng nhập từ 10 đến 11 chữ số">
+                        </p>
+                        <p>
+                            <label for="dob">Ngày sinh:</label><br>
+                        <input type="date" id="dob" name="dob">
+                        </p>
+                        <p>
+                            <label for="university">Trường Đại học:</label><br>
+                        <input type="text" id="university" name="university" list="university-list" placeholder="Chọn hoặc nhập tên trường">
+                        <datalist id="university-list">
+                            <option value="Đại học Quốc gia TP.HCM"></option>
+                            <option value="Đại học Bách Khoa"></option>
+                            <option value="Đại học Công nghệ Thông tin"></option>
+                            <option value="Đại học Sư phạm Kỹ thuật"></option>
+                            <option value="Đại học Gia Định"></option>
+                        </datalist>
+                        </p>
+</fieldset>
+                </fieldset>
+                <fieldset>
+                    <legend>Nội dung liên hệ</legend>
+                    <p>
+                        <label for="topic">Chủ đề liên hệ:</label><br>
+                        <select id="topic" name="topic">
+                            <option value="tu-van">Tư vấn dịch vụ</option>
+                            <option value="gop-y">Góp ý hệ thống</option>
+                            <option value="hop-tac">Hợp tác kinh doanh</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>Kênh phản hồi ưu tiên:</label><br>
+                        <input type="radio" id="channel_email" name="contact_channel" value="email" checked>
+                        <label for="channel_email">Email</label>
+
+                        <input type="radio" id="channel_phone" name="contact_channel" value="phone">
+                        <label for="channel_phone">Điện thoại</label>
+
+                        <input type="radio" id="channel_zalo" name="contact_channel" value="zalo">
+                        <label for="channel_zalo">Zalo</label>
+                    </p>
+                    <p>
+                        <label for="message">Nội dung tin nhắn:</label><br>
+                        <textarea id="message" name="message" rows="5" required minlength="10" placeholder="Nhập ít nhất 10 ký tự..."></textarea>
+                    </p>
+                    <p>
+                        <input type="checkbox" id="agree" name="agree" required>
+                        <label for="agree">Tôi đồng ý với các điều khoản dịch vụ</label>
+                    </p>
+                </fieldset>
+    <p>
+        <button type="submit">Gửi thông tin</button>
+        <button type="reset">Xoá</button>
+    </p>
+
+</form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bản quyền thuộc về Lê Huy Nghĩa. All rights reserved.</p>
+        <p>Cập nhật lần cuối: <time datetime="2026-09-22">22/09/2026</time></p>
+    </footer>
+
+</body>
+</html>
