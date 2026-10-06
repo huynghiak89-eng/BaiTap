@@ -1,4 +1,3 @@
-# Bài Tập Lab 2 - Website Cá Nhân (HTML5 & SEO)
 
 ## Mô Tả Dự Án
 Dự án website cá nhân chuẩn Semantic HTML5 gồm 3 trang chính (Trang chủ, Giới thiệu, Liên hệ) tích hợp form validation và tối ưu hóa SEO.
@@ -11,4 +10,4 @@ Dự án website cá nhân chuẩn Semantic HTML5 gồm 3 trang chính (Trang ch
 - `images/`: Thư mục chứa hình ảnh dự án
 
 ## Tác Giả
-- Lập trình viên: Nguyễn Huy Nghĩa
+- Lập trình viên: Lê Huy Nghĩa

@@ -3,39 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lê Huy Nghĩa - Giới thiệu bản thân và kỹ năng lập trình</title>
-    <meta name="description" content="Tìm hiểu thông tin chi tiết về Lê Huy Nghĩa">
+    <title>Giới thiệu - Bài tập 03</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
 
+    <!-- Header dùng chung từ Bài tập 02 -->
     <header>
-        <h1>Website Cá Nhân</h1>
-        <p>Chào mừng bạn đến với trang web chính thức của tôi</p>
+        <div class="navbar">
+            <div class="logo">MyWebsite</div>
+            <nav class="nav-links">
+                <a href="index.html">Trang chủ</a>
+                <a href="about.html">Giới thiệu</a>
+                <a href="contact.html">Liên hệ</a>
+            </nav>
+        </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Trang chủ</a></li>
-            <li><a href="about.html">Giới thiệu</a></li>
-            <li><a href="contact.html">Liên hệ</a></li>
-        </ul>
-    </nav>
+    <!-- Yêu cầu 1 & 8: Page Layout bao quanh Sidebar và Main -->
+    <div class="page-layout">
+        
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h3>Danh mục</h3>
+            <ul>
+                <li><a href="#skills">Kỹ năng</a></li>
+                <li><a href="#experience">Kinh nghiệm</a></li>
+                <li><a href="#projects">Dự án</a></li>
+            </ul>
+        </aside>
 
-    <main>
-        <section>
-            <h2>Về tôi</h2>
-            <p>Tôi là một sinh viên yêu thích phát triển web và xây dựng các sản phẩm công nghệ hữu ích cho cộng đồng.</p>
-            <p>Tôi luôn tìm tòi, học hỏi các công nghệ mới như HTML5, CSS3, JavaScript và các thư viện hiện đại để tối ưu trải nghiệm người dùng.</p>
-        </section>
-    </main>
+        <!-- Main Content -->
+        <main>
+            <section id="skills">
+                <h2>Kỹ năng cá nhân</h2>
+                
+                <!-- Yêu cầu 4: skills-grid chứa 4-6 skill-card -->
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>HTML5 & CSS3</h3>
+                        <p>Xây dựng giao diện web Responsive chuẩn BEM/SCSS.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>JavaScript</h3>
+                        <p>Xử lý logic DOM, Async/Await và ES6+.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>SASS/SCSS</h3>
+                        <p>Tổ chức CSS theo cấu trúc modular chuyên nghiệp.</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Git & GitHub</h3>
+                        <p>Quản lý mã nguồn và phối hợp làm việc nhóm.</p>
+                    </div>
+                </div>
+            </section>
+        </main>
 
+    </div>
+
+    <!-- Footer dùng chung từ Bài tập 02 -->
     <footer>
-        <address>
-            Email: huynghiak89@gmail.com <br>
-            Địa chỉ: Hồ Chí Minh, Việt Nam
-        </address>
-        <p>Ngày cập nhật: <time datetime="2026-09-22">22/09/2026</time></p>
-        <p>&copy; 2026 Lê Huy Nghĩa. All rights reserved.</p>
+        <p>© 2026 Bản quyền thuộc về Lê Huy Nghĩa
+        <div class="footer-links">
+            <a href="#">Chính sách bảo mật</a>
+            <a href="#">Điều khoản sử dụng</a>
+        </div>
     </footer>
 
 </body>

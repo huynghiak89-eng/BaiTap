@@ -1,0 +1,29 @@
+@use 'variables' as *;
+
+// Tablet (>= 768px)
+@media (min-width: 768px) {
+    .page-layout {
+        grid-template-columns: 220px 1fr;
+        grid-template-areas: "sidebar main";
+        gap: calc($spacing * 2);
+    }
+
+    .sidebar {
+        display: block;
+    }
+}
+
+// Desktop (>= 1024px)
+@media (min-width: 1024px) {
+    .page-layout {
+        grid-template-columns: 240px 1fr;
+    }
+}
+
+// Landscape cho mobile
+@media (max-width: 767px) and (orientation: landscape) {
+    .hero {
+        min-height: 180px;
+        padding: calc($spacing / 2);
+    }
+}

@@ -1,0 +1,60 @@
+@use 'variables' as *;
+@mixin flex-center($direction: row, $justify: space-between, $align: center) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin card-style() {
+    background-color: #ffffff;
+    border-radius: $radius;
+    border: 1px solid $color-border;
+    box-shadow: $shadow;
+    padding: $spacing;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+}
+.navbar {
+    @include flex-center(row, space-between, center);
+    background-color: $color-primary;
+    padding: $spacing calc($spacing * 2);
+    color: white;
+}
+
+.nav-links {
+    @include flex-center(row, flex-start, center);
+    gap: $spacing;
+
+    a {
+        color: #93c5fd;
+        font-weight: 500;
+        
+        &:hover {
+            color: #ffffff;
+        }
+    }
+}
+.card,
+.skill-card {
+    @include card-style();
+    flex: 1;
+    min-width: 250px;
+
+    h3 {
+        color: $color-primary;
+        margin-bottom: calc($spacing / 2);
+    }
+}
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ffffff;
+    color: $color-primary;
+    border-radius: calc($radius / 2);
+    font-weight: 600;
+    margin-top: $spacing;
+}
